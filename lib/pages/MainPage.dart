@@ -227,7 +227,7 @@ class _MainPageState extends State<MainPage> {
   // endregion 1.위젯
 
 
-  // region 이름 추가 Dialog
+  // region Dialog
   _addNameDialog(){
     String addName = "";
     showDialog(
