@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_example/FacebookLogin/FacebookPage.dart';
+import 'package:flutter_example/charts/ChartPage.dart';
+import 'package:flutter_example/kakaoLogin/KakaoPage.dart';
 
 
 class MainPage extends StatefulWidget {
@@ -9,6 +12,9 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
 
+  final _listItems = ["차트","카카오","페이스북"];
+  final _listPages = [ChartPage(), KakaoPage(), FacebookPage()];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,8 +22,22 @@ class _MainPageState extends State<MainPage> {
         title: Text("asd"),
       ),
       body: Container(
-
+        child: ListView.builder(
+          itemBuilder: (context, index){
+            return ListTile(
+              title: Text(_listItems[index]),
+              onTap: (){
+                _pageMove(index);
+              },
+            );
+          },
+          itemCount: _listItems.length,
+        ),
       ),
     );
+  }
+
+  _pageMove(int index){
+    Navigator.of(context).push(MaterialPageRoute(builder: (context) => _listPages[index]));
   }
 }
