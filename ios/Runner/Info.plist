@@ -41,5 +41,37 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+
+<!-- Kakao Login-->
+	<key>KAKAO_APP_KEY</key>
+    <string>08bef1c8a5116bcdb66bf664098e5647</string>
+
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>kakao08bef1c8a5116bcdb66bf664098e5647</string>
+<!--    카카오 간편 로그인    -->
+        <string>kakaokompassauth</string>
+        <string>storykompassauth</string>
+<!--    카카오링크, 카카오스토리    -->
+<!--        <string>kakaolink</string>      -->
+<!--        <string>storylink</string>      -->
+    </array>
+
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string></string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>kakao08bef1c8a5116bcdb66bf664098e5647</string>
+            </array>
+        </dict>
+    </array>
+<!--  카카오 로그인 end  -->
+
+
 </dict>
 </plist>
