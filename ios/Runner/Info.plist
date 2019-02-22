@@ -55,6 +55,13 @@
 <!--    카카오링크, 카카오스토리    -->
 <!--        <string>kakaolink</string>      -->
 <!--        <string>storylink</string>      -->
+
+<!--       북페이스북-->
+        <string>fbapi</string>
+        <string>fb-messenger-share-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
+
     </array>
 
     <key>CFBundleURLTypes</key>
@@ -66,11 +73,36 @@
             <string></string>
             <key>CFBundleURLSchemes</key>
             <array>
+<!--                카카오-->
                 <string>kakao08bef1c8a5116bcdb66bf664098e5647</string>
             </array>
         </dict>
+        
+        
+        <dict>
+<!--            페이스북-->
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <!--
+                 Replace "000000000000" with your Facebook App ID here.
+                 **NOTE**: The scheme needs to start with `fb` and then your ID.
+                 -->
+                <string>fb2255955151136536</string>
+            </array>
+        </dict>
     </array>
-<!--  카카오 로그인 end  -->
+    
+    
+    
+    <key>FacebookAppID</key>
+    
+    <!-- Replace "000000000000" with your Facebook App ID here. -->
+    <string>2255955151136536</string>
+    <key>FacebookDisplayName</key>
+    
+    <!-- Replace "YOUR_APP_NAME" with your Facebook App name. -->
+    <string>flutterExample</string>
+
 
 
 </dict>
