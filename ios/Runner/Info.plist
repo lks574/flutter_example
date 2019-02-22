@@ -90,6 +90,17 @@
                 <string>fb2255955151136536</string>
             </array>
         </dict>
+
+        <!--구글-->
+        <dict>
+             <key>CFBundleTypeRole</key>
+             <string>Editor</string>
+             <key>CFBundleURLSchemes</key>
+             <array>
+                <string>com.googleusercontent.apps.1049855729203-ptl0m51g9skalpthjte0r7ab6at35im7</string>
+                <string>com.ysnzp.flutterExample</string>
+             </array>
+        </dict>
     </array>
     
     

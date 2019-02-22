@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>1049855729203-ptl0m51g9skalpthjte0r7ab6at35im7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1049855729203-ptl0m51g9skalpthjte0r7ab6at35im7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCQ1_m9PNNG2BjkIdkExKFUClbKmfHFUF8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1049855729203</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ysnzp.flutterExample</string>
+	<key>PROJECT_ID</key>
+	<string>weather-e2ac5</string>
+	<key>STORAGE_BUCKET</key>
+	<string>weather-e2ac5.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1049855729203:ios:97059a382e92dc28</string>
+	<key>DATABASE_URL</key>
+	<string>https://weather-e2ac5.firebaseio.com</string>
+</dict>
+</plist>

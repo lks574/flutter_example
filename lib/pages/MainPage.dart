@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_example/FacebookLogin/FacebookPage.dart';
 import 'package:flutter_example/charts/ChartPage.dart';
+import 'package:flutter_example/chat/ChatPage.dart';
 import 'package:flutter_example/kakaoLogin/KakaoPage.dart';
 
 
@@ -12,8 +13,8 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
 
-  final _listItems = ["차트","카카오","페이스북"];
-  final _listPages = [ChartPage(), KakaoPage(), FacebookPage()];
+  final _listItems = ["차트","카카오","페이스북", "채팅"];
+  final _listPages = [ChartPage(), KakaoPage(), FacebookPage(), ChatPage()];
 
   @override
   Widget build(BuildContext context) {
