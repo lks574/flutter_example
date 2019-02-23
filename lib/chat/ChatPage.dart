@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_analytics/firebase_analytics.dart';
+//import 'package:firebase_auth/firebase_auth.dart';
+//import 'package:firebase_analytics/firebase_analytics.dart';
 
 import 'dart:async';
 
@@ -14,14 +14,14 @@ class _ChatPageState extends State<ChatPage> {
 
   final googleSignIn = new GoogleSignIn();
 //  final analytics = new FirebaseAnalytics();
-  final auth = FirebaseAuth.instance;
+//  final auth = FirebaseAuth.instance;
   var currentUserEmail;
   var _scaffoldContext;
 
 
   _signOut() async{
-    await auth.signOut();
-    googleSignIn.signOut();
+//    await auth.signOut();
+    await googleSignIn.signOut();
     Scaffold.of(_scaffoldContext).showSnackBar(SnackBar(content: Text("User logged out")));
   }
 
@@ -51,11 +51,11 @@ class _ChatPageState extends State<ChatPage> {
      * firebase auth 구글 추가
      * firebase auth google 활성화하기
      */
-    if (await auth.currentUser() == null){
-      GoogleSignInAuthentication credentials = await googleSignIn.currentUser.authentication;
-      AuthCredential authCredential = GoogleAuthProvider.getCredential(idToken: credentials.idToken, accessToken: credentials.accessToken);
-      await auth.signInWithCredential(authCredential);
-    }
+//    if (await auth.currentUser() == null){
+//      GoogleSignInAuthentication credentials = await googleSignIn.currentUser.authentication;
+//      AuthCredential authCredential = GoogleAuthProvider.getCredential(idToken: credentials.idToken, accessToken: credentials.accessToken);
+//      await auth.signInWithCredential(authCredential);
+//    }
   }
 
 

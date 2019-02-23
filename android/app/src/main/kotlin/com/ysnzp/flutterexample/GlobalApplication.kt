@@ -9,6 +9,7 @@ class GlobalApplication : FlutterApplication(), PluginRegistry.PluginRegistrantC
 
     override fun onCreate() {
         super.onCreate()
+
     }
 
     override fun registerWith(p0: PluginRegistry?) {
