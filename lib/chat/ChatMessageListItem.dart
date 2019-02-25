@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 var currentUserEmail;
 
+// 채팅 컨텐츠 리스트 부분
 class ChatMessageListItem extends StatelessWidget {
   final DataSnapshot messageSnapshot;
   final Animation animation;
@@ -25,6 +26,7 @@ class ChatMessageListItem extends StatelessWidget {
     );
   }
 
+  // 내가 보낸 메세지(왼쪽에 표시)
   List<Widget> getSentMessageLayout() {
     return <Widget>[
       new Expanded(
@@ -62,6 +64,8 @@ class ChatMessageListItem extends StatelessWidget {
     ];
   }
 
+
+  // 상대가 보낸 메세지(왼쪽에 표시)
   List<Widget> getReceivedMessageLayout() {
     return <Widget>[
       new Column(

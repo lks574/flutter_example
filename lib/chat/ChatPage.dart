@@ -83,6 +83,7 @@ class ChatScreenState extends State<ChatScreen> {
         ));
   }
 
+  // IOS 버튼 (CupertinoButton)
   CupertinoButton getIOSSendButton() {
     return new CupertinoButton(
       child: new Text("Send"),
@@ -92,6 +93,7 @@ class ChatScreenState extends State<ChatScreen> {
     );
   }
 
+  // 인드로이드 형식 (material)
   IconButton getDefaultSendButton() {
     return new IconButton(
       icon: new Icon(Icons.send),
@@ -101,6 +103,7 @@ class ChatScreenState extends State<ChatScreen> {
     );
   }
 
+  // 입력창 (왼쪽 버튼, 가운데 텍스트, 보내기버튼)
   Widget _buildTextComposer() {
     return new IconTheme(
         data: new IconThemeData(
@@ -181,6 +184,8 @@ class ChatScreenState extends State<ChatScreen> {
     analytics.logEvent(name: 'send_message');
   }
 
+
+  // 로그인 체크 (구글 및 파이어베이스)
   Future<Null> _ensureLoggedIn() async {
     GoogleSignInAccount signedInUser = googleSignIn.currentUser;
     if (signedInUser == null)
@@ -198,6 +203,7 @@ class ChatScreenState extends State<ChatScreen> {
       await auth.signInWithCredential(GoogleAuthProvider.getCredential(idToken: credentials.idToken, accessToken: credentials.accessToken));
     }
   }
+
 
   Future _signOut() async {
     await auth.signOut();
